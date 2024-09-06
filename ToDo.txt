@@ -1,0 +1,6 @@
+
+Add more PelcoD commands.
+Add option to record positions whenever moving in TMotor.
+Add enum for speeds (or equivalent) in PelcoD.
+Add TMotor functions for movement (move left, right, up, down).
+Allow for combined movement Pan+Tilt.
