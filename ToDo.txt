@@ -5,6 +5,6 @@ Add option to record positions whenever moving in TMotor.
 Add enum for speeds (or equivalent) in PelcoD.
 Add TMotor functions for movement (move left, right, up, down).
 Allow for combined movement Pan+Tilt.
-Update SetSerialData to check for FF as first byte and checksum for last.
+Update SetSerialData to check for FF as first byte and checksum for last. (Don't allow address of $FF).
 Add TMotor events for received tilt pos and received pan pos.
 Figure out whether TThread can be used for collecting position data.
