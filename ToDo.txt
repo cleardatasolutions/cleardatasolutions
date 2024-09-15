@@ -8,6 +8,9 @@ Update SetSerialData to check for FF as first byte and checksum for last. (Don't
 Add TMotor events for received tilt pos and received pan pos.
 Stop polling for position data when values stop changing.
 
+Fix calculation of tilt angle for setting to a fixed tilt position.
+Fix receiving tilt data.
+
 Address all "FIX" tags in code.
 
 Motor does not respond with position data when directed to pan to a fixed position.  This is likely not fixable, work around it.
