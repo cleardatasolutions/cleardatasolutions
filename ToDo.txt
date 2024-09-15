@@ -1,5 +1,4 @@
 
-Add more PelcoD commands.
 Add ability to go to specific point in TMotor (and PelcoD?).
 Add enum for speeds (or equivalent) in PelcoD.
 Add TMotor functions for movement (move left, right, up, down).
@@ -8,8 +7,7 @@ Update SetSerialData to check for FF as first byte and checksum for last. (Don't
 Add TMotor events for received tilt pos and received pan pos.
 Stop polling for position data when values stop changing.
 
-Fix calculation of tilt angle for setting to a fixed tilt position.
-Fix receiving tilt data.
+Receiving both Pan and Tilt data at the same time causes on packet to overwrite the other packet.  Only receive tilt data when adjusting tilt, and pan data when adjusting pan.  Store last known tilt/pan in variables for reporting.
 
 Address all "FIX" tags in code.
 
