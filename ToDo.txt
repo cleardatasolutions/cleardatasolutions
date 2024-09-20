@@ -6,10 +6,7 @@ Update SetSerialData to check for FF as first byte and checksum for last. (Don't
 Add TMotor events for received tilt pos and received pan pos.
 Stop polling for position data when values stop changing.
 
-Receiving both Pan and Tilt data at the same time causes on packet to overwrite the other packet.  Only receive tilt data when adjusting tilt, and pan data when adjusting pan.  Store last known tilt/pan in variables for reporting.
-
 Address all "FIX" tags in code.
 
 Motor does not respond with position data when directed to pan to a fixed position.  This is likely not fixable, work around it.
 
-OnTerminate does not fire.  Figure out how/when to FreeAndNil(fPositionThread) or else re-implement manual Stop property to use instead of Terminate.
