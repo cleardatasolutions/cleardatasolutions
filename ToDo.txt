@@ -1,5 +1,4 @@
 
-Add ability to go to specific point in TMotor (and PelcoD?).
 Add enum for speeds (or equivalent) in PelcoD.
 Add TMotor functions for movement (move left, right, up, down).
 Allow for combined movement Pan+Tilt.
@@ -12,3 +11,5 @@ Receiving both Pan and Tilt data at the same time causes on packet to overwrite 
 Address all "FIX" tags in code.
 
 Motor does not respond with position data when directed to pan to a fixed position.  This is likely not fixable, work around it.
+
+OnTerminate does not fire.  Figure out how/when to FreeAndNil(fPositionThread) or else re-implement manual Stop property to use instead of Terminate.
