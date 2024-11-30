@@ -1,11 +1,3 @@
-
-Add enum for speeds (or equivalent) in PelcoD.
-Add TMotor functions for movement (move left, right, up, down).
-Allow for combined movement Pan+Tilt.
-Update SetSerialData to check for FF as first byte and checksum for last. (Don't allow address of $FF).
-Add TMotor events for received tilt pos and received pan pos.
-Stop polling for position data when values stop changing.
-
 Address all "FIX" tags in code.
 
 Motor does not respond with position data when directed to pan to a fixed position.  This is likely not fixable, work around it.
